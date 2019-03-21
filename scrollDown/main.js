@@ -15,12 +15,6 @@ let pairBox2_transform = -100;
 let pairBox3 = document.getElementById("id3-text-span");
 let pairBox3_transform = 100;
 
-function remove_webhostlogo() {
-  var select = document.getElementsByTagName("body");
-  select.removeChild(select.lastChild);
-  select.removeChild(select.lastChild);
-}
-
 
 
 function check() {
