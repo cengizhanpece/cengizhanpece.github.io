@@ -1,0 +1,118 @@
+.header{
+  background-color: #4d636f;
+  position: fixed;
+  top:0;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+}
+
+.homepage-btn{
+  align-self: center;
+}
+.home{
+  display: flex;
+  height: 50px;
+  padding: 0px 20px ;
+  background-color: #3a4b53;
+  color: white;
+  font-size: 18px;
+  align-items: center;
+  cursor: pointer;
+}
+.homepage-btn i{
+  padding-right: 20px;
+}
+.home:hover{
+  color: #000;
+  background-color: #ccc;
+}
+.navbar-icon{
+  display: flex;
+  height: 50px;
+  padding:0px 25px;
+  color: white;
+  font-size: 18px;
+  align-items: center;
+  cursor: pointer;
+}
+.navbar-icon:hover{
+  color: #000;
+  background-color: white;
+}
+.notification-box{
+  display: flex;
+  height: 50px;
+  padding: 0px 30px ;
+  color: white;
+  font-size: 17px;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+.notification-box:hover{
+  color: #000;
+  background-color: #ccc;
+}
+.notification-box:hover .notification-dropdown{
+  display: block;
+}
+.notification{
+  border-radius: 100%;
+  font-size: 17px;
+  padding: 3px 8px;
+  position: absolute;
+  top: 0;
+  left: 60%;
+  color: white;
+  background-color: #4CAF50;
+}
+.notification-dropdown{
+  position: absolute;
+  display: none;
+  width: 300px;
+  margin: 0;
+  padding: 0;
+  top:50px;
+  left: 0;
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+}
+.notification-dropdown-item{
+  color: #000;
+  background-color: #fff;
+  padding: 10px 15px;
+}
+.notification-dropdown-item:hover{
+  background-color: #ccc;
+}
+
+.my-account img{
+  border-radius: 50%;
+}
+.my-account{
+  position: fixed;
+  right: 0;
+  align-self: flex-end;
+}
+
+@media screen and (max-width: 500px){
+  .notification-box{
+    display: none;
+  }
+}
+@media screen and (max-width: 417px){
+  .messages{
+    display: none;
+  }
+}
+@media screen and (max-width: 340px){
+  .account-settings{
+    display: none;
+  }
+
+}
+@media screen and (max-width: 280px){
+  .my-account{
+    position:static;
+  }
+}

@@ -1,0 +1,35 @@
+#ana {
+    width: 500px;
+    height: 600px;
+    background-color: #FAE3E3;
+    margin: 0 auto;
+}
+
+#sonuc {
+    background-color: whitesmoke;
+    width: 80%;
+    height: 50px;
+    margin-left: 18px;
+    text-align: right;
+    line-height: 50px;
+    font-size: 40px;
+    padding-right: 10px;
+    color: #846B8A;
+    font-family: sans-serif;
+    -webkit-box-shadow: 5px 4px 7px 2px rgba(61, 57, 54, 0.5);
+    -moz-box-shadow: 5px 4px 7px 2px rgba(61, 57, 54, 0.5);
+    box-shadow: 5px 4px 7px 2px rgba(61, 57, 54, 0.5);
+    overflow: hidden;
+}
+
+body {
+    background-color: #FAE3E3;
+    
+}
+#baslik{
+    text-align: center;
+    padding-right: 40px;
+    margin-bottom: 10px;
+    font-size:50px;
+    color: #846B8A;
+}

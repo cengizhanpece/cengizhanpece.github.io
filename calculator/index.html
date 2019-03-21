@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hesap Makinası</title>
+
+    <script src="JavaScript.js">
+        
+        
+        
+        
+        
+    
+    </script>
+
+    <style>
+        @import "css.css";
+        @import "button.css";
+    </style>
+
+</head>
+
+<body>
+    <div id="ana">
+        <div id="baslik">Hesap Makinesi</div>
+        <div id="sonuc" contenteditable="true"></div>
+        <form>
+            <input type="button" class="button" onclick="temizle()" value="C" style="width: 179px">
+            <input type="button" class="button" onclick="geri()" value="&#8592;" style="margin-left:7px; width: 218px" />
+
+            <input type="button" class="button" onclick="ekle(7)" value="7">
+            <input type="button" class="button" onclick="ekle(8)" value="8" style="margin-left:7px; " />
+            <input type="button" class="button" onclick="ekle(9)" value="9" style="margin-left:7px; " />
+            <input type="button" class="operator" onclick="islem('/')" value="/" />
+
+            <input type="button" class="button" onclick="ekle(4)" value="4">
+            <input type="button" class="button" onclick="ekle(5)" value="5" style="margin-left:7px; " />
+            <input type="button" class="button" onclick="ekle(6)" value="6" style="margin-left:7px; " />
+            <input type="button" class="operator" onclick="islem('*')" value="*" />
+
+            <input type="button" class="button" onclick="ekle(1)" value="1">
+            <input type="button" class="button" onclick="ekle(2)" value="2" style="margin-left:7px; " />
+            <input type="button" class="button" onclick="ekle(3)" value="3" style="margin-left:7px; " />
+            <input type="button" class="operator" onclick="islem('+')" value="+" />
+
+            <input type="button" class="button" onclick="ekle(0)" value="0" />
+            <input type="button" class="button" onclick="islem('.')" value="." style="margin-left:7px; " />
+            <input type="button" class="button" onclick="esittir()" value="=" style="margin-left:7px; " />
+            <input type="button" class="operator" onclick="islem('-')" value="-" />
+
+        </form>
+
+
+    </div>
+</body>
+
+</html>

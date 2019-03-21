@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Yapılacaklar Listesi</title>
+  <style>
+    @import "css.css";
+  </style>
+
+</head>
+
+<script type="text/javascript">
+  function enter(e){
+    if(e.keyCode == 13) { ekle(); }
+  }
+
+  function tarih(){
+    var tarih = new Date();
+    var gun = String(tarih.getDate());
+    var ay = String(kontrol(tarih.getMonth() + 1));
+    var yil = String(tarih.getFullYear());
+    var saat = tarih.getHours();
+    var dakika = tarih.getMinutes();
+
+    saat = String(kontrol(saat));
+    dakika = String(kontrol(dakika));
+
+    var icerik =    gun + "/" + ay + "/" + yil + "  " + saat+ ":"+ dakika;
+    return icerik;
+  }
+
+  function ekle(){
+    var icerik = document.getElementById("textbox").value;
+    icerik= icerik.trim();
+    var icerik_uzunluk = icerik.length;
+    if(icerik == "")  // içerik boşsa value temizle ve hiçbişey ekleme
+      { document.getElementById("textbox").value=""; return; }
+    if(icerik_uzunluk >= 78) // içerik uzunluğu ayarlama
+      { alert("İçerik 77 karakterden uzun olamaz."); return; }
+
+
+
+      var yeni_li = document.createElement("li"); //li elemanı oluşturlur
+      var textnode = document.createTextNode(icerik);  //textbox valuesi textnode a atılır
+      yeni_li.appendChild(textnode); //textnode li ye eklenir
+      yeni_li.addEventListener( 'click', function(){
+         return yapildi(this);
+      } );
+      var span = document.createElement("span");
+      span.innerHTML = tarih();
+      yeni_li.appendChild(span);
+
+
+      var element =  document.getElementById("yapilacaklar1");
+      element.insertBefore(yeni_li, element.childNodes[2]);
+      document.getElementById("textbox").value="";
+  }
+
+  function yapildi(i){
+    i.removeChild(i.childNodes[1]);
+    var span = document.createElement("span");
+    span.innerHTML = tarih();
+    var icerik =  i.innerHTML.trim();
+    var yeni_li = document.createElement("li"); //li elemanı oluşturlur
+    var textnode = document.createTextNode(icerik);  //textbox valuesi textnode a atılır
+
+    yeni_li.appendChild(textnode); //textnode li ye eklenir
+
+    yeni_li.addEventListener( 'click', function(){
+       return sil(this);
+    } );
+
+    yeni_li.appendChild(span);
+  var element =  document.getElementById("yapilanlar1");
+    element.insertBefore(yeni_li, element.childNodes[2]);
+    i.parentElement.removeChild(i);
+  }
+
+  function sil(i){
+      i.parentElement.removeChild(i);
+  }
+
+  function kontrol(deger) {
+      if (deger < 10) {
+          deger = "0" + deger;
+      }
+      return deger;
+  }
+
+</script>
+
+<body>
+
+  <div id="ana">
+
+    <div id="ekle">
+      <h1>Yapılacaklar Listesi</h1>
+        <h1>
+           <input type="text" id="textbox" name="textbox" autocomplete="off" onkeypress="enter(event);"/>
+            <input type="button" id="ekle-button" value="Ekle" onClick="ekle();" />
+        </h1>
+    </div>
+    <div id="yapilacaklar">
+      <ul id="yapilacaklar1">
+        <h1 >Yapılacaklar</h1>
+      </ul>
+    </div>
+    <div id="yapilanlar">
+      <ul id="yapilanlar1">
+        <h1>Yapılanlar</h1>
+      </ul>
+    </div>
+
+
+  </div>
+
+
+
+    </div>
+
+
+</body>
+
+</html>

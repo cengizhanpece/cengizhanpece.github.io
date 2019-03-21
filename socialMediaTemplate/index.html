@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Social Media</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- W3 FRAMEWORK -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+  <link rel="stylesheet" href="container.css">
+  <link rel="stylesheet" href="container-mobil.css">
+  <link rel="stylesheet" href="header.css">
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+      background-color: #f5f7f8;
+
+    }
+  </style>
+</head>
+
+<body>
+    <!-- HEADER STARTS -->
+    <div class="header">
+      <div class="home">
+        <div class="homepage-btn">
+          <i class="fa fa-home"></i>Home
+        </div>
+      </div>
+      <div class="news navbar-icon" title="News">
+        <i class="fa fa-globe"></i>
+      </div>
+      <div class="account-settings navbar-icon" title="Account Settings">
+        <i class="fa fa-user"></i>
+      </div>
+      <div class="messages navbar-icon" title="Messages">
+        <i class="fa fa-envelope"></i>
+      </div>
+      <div class="notification-box" title="Notifications">
+          <i class="fa fa-bell"></i>
+          <div class="notification">3</div>
+          <div class="notification-dropdown">
+            <div class="notification-dropdown-item" title="">One new friend request </div>
+            <div class="notification-dropdown-item" title="">John Doe posted on your wall </div>
+            <div class="notification-dropdown-item" title="">Jane likes your post</div>
+          </div>
+    </div>
+      <div class="my-account navbar-icon" title="My Account">
+        <img src="navbar-profile-photo.png" height="23px" width="23px" />
+      </div>
+    </div>
+    <!-- HEADER ENDS -->
+
+    <!-- HEADER STARTS (SMALL SCREEN) -->
+    <!-- HEADER ENDS (SMALL SCREEN) -->
+
+  <!-- Page Container -->
+    <div class="container">
+      <!-- LEFT COLUMN -->
+      <div class="left-column">
+        <!-- Profile -->
+        <div class="left-card-1 card-shadow">
+          <h4>My Profile</h4>
+          <img src="left-column-avatar.png" width="106px" height="106px" />
+          <hr class="hr">
+          <div class="left-card-1-desc">
+            <p><i class="fa fa-pencil"></i>Designer, UI</p>
+            <p><i class="fa fa-home"></i>London, UK</p>
+            <p><i class="fa fa-birthday-cake"></i>April 1, 1988</p>
+          </div>
+        </div>
+        <!-- Accordion -->
+        <div class="left-card-2 card-shadow">
+          <div class="left-card-2-member">
+            <p><i class="fa fa-circle-o-notch"></i>My Groups</p>
+          </div>
+          <div class="left-card-2-member">
+            <p><i class="fa fa-calendar-check-o"></i>My Events</p>
+          </div>
+          <div class="left-card-2-member">
+            <p><i class="fa fa-users"></i>My Photos</p>
+          </div>
+        </div>
+        <!-- Interest -->
+        <div class="left-card-3 card-shadow">
+          <p>Interest</p>
+          <span style="background-color:#303e45 ; color:#fff ;">News</span>
+          <span style="background-color:#3a4b53 ; color:#fff ;">W3Schools</span>
+          <span style="background-color:#435761 ; color:#fff ;">Labels</span>
+          <span style="background-color:#4d636f ; color:#fff ;">Games</span>
+          <span style="background-color:#57707d ; color:#fff ;">Friends</span>
+          <span style="background-color:#607d8b ; color:#fff ;">Games</span>
+          <span style="background-color:#7d97a5 ; color:#fff ;">Friends</span>
+          <span style="background-color:#9eb1bb ; color:#000 ;">Food</span>
+          <span style="background-color:#becbd2 ; color:#000 ;">Design</span>
+          <span style="background-color:#dfe5e8 ; color:#000 ;">Art</span>
+          <span style="background-color:#f5f7f8 ; color:#000 ;">Photos</span>
+
+        </div>
+        <!-- Alert-Box -->
+        <div class="alert-box">
+          <span style="font-weight:bold;">Hey!</span>
+          <p>People are looking at your profile. Find out who.</p>
+          <i onclick="this.parentElement.style.display='none'" class="fa fa-remove alert-box-remove"></i>
+        </div>
+      </div>
+
+      <!-- MIDDLE COLUMN -->
+      <div class="middle-column">
+        <div class="post-status card-shadow">
+          <p class="post-status-title">Social Media template by Cengiz Han</p>
+          <input type="text" class="post-status-textbox" placeholder="Status: Feeling Blue" ></p>
+          <div class="post-button">
+            <i class="fa fa-pencil"></i>
+            <span>Post</span>
+          </div>
+        </div>
+
+      <!--POST 1 -->
+        <div class="post card-shadow">
+          <img class="post-owner-photo" src="navbar-profile-photo.png" width="60px"/>
+          <span class="post-owner-name">John Doe</span>
+          <span class="post-elapsed-time">1 min</span>
+          <hr class="hr">
+          <p class="post-container">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <div class="post-photos">
+            <div class="half-photo">
+              <img src="lights.jpg" width="100%">
+            </div>
+            <div class="half-photo">
+              <img src="nature.jpg" width="100%">
+            </div>
+          </div>
+          <div class="expression-button">
+            <div class="like-btn">
+              <i class="fa fa-thumbs-up"></i>
+              Like
+            </div>
+            <div class="comment-btn">
+              <i class="fa fa-comment"></i>
+              Comment
+            </div>
+          </div>
+        </div>
+
+      <!-- POST 2 -->
+      <div class="post card-shadow">
+        <img class="post-owner-photo" src="avatar5.png" width="60px"/>
+        <span class="post-owner-name">Jane Doe</span>
+        <span class="post-elapsed-time">16 min</span>
+        <hr class="hr">
+        <p class="post-container">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="expression-button">
+          <div class="like-btn">
+            <i class="fa fa-thumbs-up"></i>
+            Like
+          </div>
+          <div class="comment-btn">
+            <i class="fa fa-comment"></i>
+            Comment
+          </div>
+        </div>
+      </div>
+
+    <!--POST 3 -->
+    <div class="post card-shadow">
+      <img class="post-owner-photo" src="avatar6.png" width="60px"/>
+      <span class="post-owner-name">Angie Jane</span>
+      <span class="post-elapsed-time">32 min</span>
+      <hr class="hr">
+      <p class="post-container">Have you seen this?</p>
+      <img class="full-photo" src="nature.jpg">
+      <p class="post-container">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <div class="expression-button">
+        <div class="like-btn">
+          <i class="fa fa-thumbs-up"></i>
+          Like
+        </div>
+        <div class="comment-btn">
+          <i class="fa fa-comment"></i>
+          Comment
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="right-column">
+        <div class="upcoming-events card-shadow">
+              Upcoming Events
+              <img src="forest.jpg" width="100%">
+              <p class="upcoming-events-title">Holiday</p>
+              Friday 15:00
+              <div class="upcoming-events-info-button">İnfo</div>
+        </div>
+
+        <div class="friend-request card-shadow">
+          Friend Request
+          <img src="avatar6.png" class=" margin-top-15" width="45%;">
+          Jane Doe
+          <div class="friend-request-buttons margin-top-15">
+            <div class="request-accept">
+              <i class="fa fa-check"></i>
+            </div>
+            <div class="request-decline">
+              <i class="fa fa-remove"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="ads card-shadow">
+          ADS
+        </div>
+        <div class="bug card-shadow">
+          <i class="fa fa-bug"></i>
+        </div>
+      </div>
+    </div>
+  <!-- Page Container End -->
+<!-- FOOTER -->
+<footer class="footer">
+  Footer
+</footer>
+
+
+</body>
+
+</html>

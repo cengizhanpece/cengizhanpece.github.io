@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas Game</title>
+    <style>
+        canvas{
+            float: left;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .howToPlay{
+            float: left;
+            margin-left: 50px;
+            text-align: center;
+        }
+        #life{
+            clear: both;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <canvas id="canvas" width="800" height="600" style="border: 1px solid #ccc; "></canvas>
+    <div class="howToPlay">
+        <h1>How To Play</h1>
+        <p>Move with left and right arrow keys and shoot with spacebar</p>
+        
+    </div>
+    <div id="life"></div>
+    <div id="skor"></div>
+</body>
+    <script src="canvas.js"></script>
+    <script src="bullet.js"></script>
+    <script src="box.js"></script>
+    <script src="player.js"></script>
+    <script src="game.js"></script>
+</html>
