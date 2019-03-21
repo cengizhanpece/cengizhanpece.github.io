@@ -1,5 +1,4 @@
 document.body.onscroll = calis;
-document.body.onload = remove_webhostlogo;
 let oldScrollPos = 0;
 let inner = document.getElementById("inner");
 let opacity = 1.0;
