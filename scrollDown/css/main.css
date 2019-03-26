@@ -59,17 +59,39 @@ body{
 }
 .pairBox-photo{
   height: 100%;
-  flex-basis: 50%;
+  flex-basis: 45%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   min-width: 350px;
 }
 .pairBox-text{
-
+  flex-basis: 55%;
 }
 .pairBox-text h1{
   margin-top: 0;
+}
+.pairBox-text a{
+  text-decoration: none;
+  font-size: 20px;
+}
+.pairBox-text .a{
+  padding: 10px;
+  display: inline-block;
+  border: 2px solid white;
+  background-color: transparent;
+  transition: 0.3s;
+  color: white;
+  cursor: pointer;
+}
+.pairBox-text .a:hover {
+  background-color: white;
+}
+#id1-text a{
+  color:white;
+}
+#id1-text .a:hover a{
+  color: #48a3ff;
 }
 #id1{
   background-image: url("../img/img1.jpg");
@@ -99,6 +121,22 @@ body{
   flex-direction: column;
   justify-content: center;
 }
+
+#id2-text .a{
+  border: 2px solid #333;
+  background-color: transparent;
+  transition: 0.3s;
+}
+#id2-text .a:hover {
+  background-color: #333;
+}
+#id2-text a{
+  color: #333;
+}
+#id2-text .a:hover a{
+  color: #ffce76;
+}
+
 #id2-text-span{
   transform: translateX(-100%);
 }
@@ -114,6 +152,24 @@ body{
   align-items: center;
   justify-content: center;
 }
+
+#id3-text .a{
+  border: 2px solid white;
+  background-color: transparent;
+  transition: 0.3s;
+}
+#id3-text .a:hover {
+  background-color: white;
+}
+#id3-text a{
+  color: white;
+}
+#id3-text .a:hover a{
+  color: #866ec7;
+}
+
+
+
 #id3-text-span{
   transform: translateX(100%);
 }
@@ -146,5 +202,5 @@ body{
   .doubleBox{
     font-size: 16px;
   }
-  
+
 }
