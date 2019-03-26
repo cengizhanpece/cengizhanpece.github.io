@@ -7,19 +7,16 @@ footer{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
-
-footer span{
-  margin: 0;
-  padding: 0;
+footer a{
+  text-decoration: none;
+  color:inherit;
 }
 
 footer .github{
   color:white;
   font-size: 18px;
   font-weight: bold;
-}
-.github a{
-  text-decoration: none;
-  color:inherit;
+  margin-top: 10px;
 }
