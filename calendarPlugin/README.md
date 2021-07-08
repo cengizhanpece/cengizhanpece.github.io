@@ -2,12 +2,15 @@
 
 Simple calendar plugin with plain javascript.
 
+Live Demo: https://cengizhanpece.github.io/calendarPlugin/
 ## Getting Started
 
 Follow these instructions if you want to use this plugin on your local machine
 
 ### Installing
-  First import these source code into your project
+  First download the css and js files
+  Then copy the files into your project files
+  Then import these source codes into your project codes
   
    ```
    
