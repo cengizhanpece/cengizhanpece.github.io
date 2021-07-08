@@ -1,0 +1,68 @@
+.calendar-top-navbar{
+    height:30px; 
+    display:flex; 
+    align-items: center; 
+    justify-content:space-between;
+    color:#333;
+    font-size: 1.3em;
+    background-color: #eee;
+}
+
+.calendar-top-navbar-btn, .calendar-top-navbar-selected-date{
+    height: 100%; 
+    display:flex; 
+    align-items: center; 
+    justify-content:center; 
+    cursor:pointer;
+    transition: 0.3s;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+.calendar-top-navbar-selected-date{
+    flex-basis: auto;
+    flex-grow:1;
+}
+.prev{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.next{
+    padding-right: 15px;
+    padding-left: 15px;
+
+}
+
+.calendar-top-navbar-btn:hover, .calendar-top-navbar-selected-date:hover{
+    background-color: #ccc;
+}
+
+.calendar-day-of-weeks-wrapper{
+    padding-top: 5px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+}
+.calendar-day-wrapper{
+    padding-top: 15px;
+    display:grid;
+    gap:20;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    text-align: center;
+    grid-row-gap: 15px;
+    cursor:pointer;
+    
+}
+.calendar-day{
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+.calendar-day-disabled{
+    opacity: 0.6;
+}
+.calendar-day-selected{
+    color: red;
+}
